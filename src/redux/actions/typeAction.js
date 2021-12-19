@@ -1,1 +1,4 @@
 export const SHOW_SIDE_MENU = 'SHOW_SIDE_MENU';
+export const SET_DATA_DRIVER = 'SET_DATA_DRIVER';
+export const SEARCH_DATA_DRIVER = 'SEARCH_DATA_DRIVER';
+export const SET_ERROR = 'SET_ERROR';

@@ -1,0 +1,29 @@
+@import '../../assets/scss/general.scss';
+
+
+.pagination {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  .pagination-btn {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: $black;
+      & svg {
+          margin: 0 6px
+      }
+
+      &.disabled {
+        cursor: default !important;
+        color: $grey !important;
+      }
+  }
+}
+.pagination-desc {
+  color: $grey;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 12px;
+}

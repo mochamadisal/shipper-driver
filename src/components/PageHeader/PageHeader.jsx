@@ -4,7 +4,7 @@ import './pageheader.scss';
 
 const Banner = ({title, description, children}) => {
     return (
-        <div className="page-header py-16p px-20p mb-24p">
+        <div className="page-header py-16p px-20p mb-28p">
             <div className="page-title">
                 <h1 className="title">{title}</h1>
                 <h5 className="description">{description}</h5>

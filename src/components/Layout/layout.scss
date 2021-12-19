@@ -6,7 +6,7 @@
     align-items: stretch;
 
     .container-content {
-        width: calc(100% - 12rem);
+        width: calc(100% - 15rem);
         min-height: 100vh;
         @media (max-width: $mobile) {
             width: 100%

@@ -31,7 +31,7 @@ const MainLayout = memo( ({Container, title}) => {
                     <Notifications />
                     {dataState.sideMenu && <div className='overlay' onClick={() => hideSideMenu(false)}></div>}
                     <SideMenu />
-                    <div className='container-content'>
+                    <div className="container-content">
                         <Header />
                         <Container />
                     </div>

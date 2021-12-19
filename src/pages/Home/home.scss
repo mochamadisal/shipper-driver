@@ -2,38 +2,31 @@
 
 .homepage-container{
     background-color: $softGrey;
+    padding: 28px;
+    height: calc(100% - 64px);
+    width: 100%;
     .content-driver {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        gap: 16px;
+        gap: 45px;
         padding-right: 30px;
         &::-webkit-scrollbar {
             display: none;
         }
         @media (max-width: $small) {
-            flex-direction: column
+            flex-direction: column;
+            padding-right: 0px !important;
         }
     }
-    .pagination {
-        margin-top: 35px;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        .pagination-btn {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            color: $black;
-            & svg {
-                margin: 0 6px
-            }
-        }
-    }
-    .pagination-desc {
-        color: $grey;
+    .empty-search {
+        margin-top: 45px;
+        padding: 12px 16px;
+        color: #7c0a2f;
+        border-radius: 6px;
         text-align: center;
-        margin: 15px 0;
-        font-size: 12px;
+        h5 {
+            font-size: 16px;
+        }
     }
 }
