@@ -1,0 +1,57 @@
+@import '../../assets/scss/general.scss';
+
+
+.card-container {
+  width: 300px;
+  background-color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  @media (max-width: $small) {
+    width: 100%;
+  }
+  .head-card {
+    padding: 16px;
+    border-bottom: 1px solid $borderGrey;
+    display: flex;
+    justify-content: space-between;
+    & svg {
+      color: $grey;
+    }
+    .title-card {
+      color: $grey;
+      line-height: 20px;
+      font-weight: 400;
+      & span {
+        color: $red;
+        font-weight: 600;
+      }
+    }
+  }
+  .body-card {
+    padding: 24px;
+    @media (max-width: $small) {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+      .hide-mobile {
+        display: none;
+      }
+    }
+    .img-body {
+      border-radius: 50%;
+      height: 80px;
+      margin-bottom: 12px;
+    }
+    .description {
+      margin-bottom: 16px;
+      .label {
+        color: $grey;
+      }
+      .value {
+        color: $black;
+        margin-top: 4px;
+      }
+    }
+  }
+}

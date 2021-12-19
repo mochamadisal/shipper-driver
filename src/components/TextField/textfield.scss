@@ -1,0 +1,40 @@
+@import '../../assets/scss/general.scss';
+
+
+.text-field-container {
+  position: relative;
+  display: inline-block;
+  > svg , img {
+    position: absolute;
+    left: 9px;
+    top: 11px;
+    height: 20px;
+    color: $red
+  }
+  .input-text {
+    appearance: none;
+    padding: 8px 12px 8px 40px;
+    outline: none;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: #fff;
+    &:focus {
+      border: 1px solid $red;
+      outline: none;
+      animation: pulse .8s linear;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255,70,70, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255,70,70, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255,70,70, 0);
+    }
+  }
+}

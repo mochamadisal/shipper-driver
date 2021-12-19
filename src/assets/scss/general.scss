@@ -1,0 +1,73 @@
+@import './variables';
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './colors';
+@import './spacing';
+@import './typography';
+@import './webkit';
+@import './const';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+#root {
+    position: relative;
+    height: 100%;
+}
+
+html, body{
+    height: 100%;
+    background: --default-background-color;
+}
+
+.cursor-pointer{cursor: pointer}
+
+.objectFit-contain{object-fit: contain;}
+.objectFit-cover{object-fit: cover;}
+
+
+// Toast
+.toast-notification{
+    width: 96% !important;
+    text-align: right !important;
+    top: 30px !important;
+    span{
+        border-radius: 5px !important;
+    }
+}
+
+.with-shadow{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)!important;
+}
+
+.style-btn{
+    border: none;
+    opacity: 0.8;
+    border-radius: 8px;
+    padding: 10px 10px;
+    @extend .transition05s;
+    &.primary-btn{
+        background-color: var(--primary-background-color);
+        @extend .color-white;
+    }
+    &.secondary-btn{
+        background-color: var(--secondary-dark-background-color);
+        @extend .color-white;
+    }
+    &.default-btn{
+        background-color: var(--white-background-color);
+        @extend .color-black;
+    }
+    &.outline-default-btn{
+        border: 1px solid $defaultPrimary;
+        background-color: var(--white-background-color);
+        padding: 5px 10px;
+        @extend .color-black;
+    }
+    &.outline-danger-btn{
+        border: 1px solid $errorColor;
+        background-color: var(--white-background-color);
+        padding: 5px 10px;
+        @extend .color-black;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}

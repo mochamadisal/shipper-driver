@@ -1,0 +1,39 @@
+@import '../../assets/scss/general.scss';
+
+.homepage-container{
+    background-color: $softGrey;
+    .content-driver {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 16px;
+        padding-right: 30px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        @media (max-width: $small) {
+            flex-direction: column
+        }
+    }
+    .pagination {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        .pagination-btn {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: $black;
+            & svg {
+                margin: 0 6px
+            }
+        }
+    }
+    .pagination-desc {
+        color: $grey;
+        text-align: center;
+        margin: 15px 0;
+        font-size: 12px;
+    }
+}

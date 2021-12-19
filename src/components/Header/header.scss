@@ -1,0 +1,52 @@
+@import '../../assets/scss/general.scss';
+
+
+.header{
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media (max-width: $mobile) {
+    justify-content: space-between
+  }
+
+  .left-header {
+    display: none;
+    @media (max-width: $mobile) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .right-header {
+    display: flex;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .label-header {
+    color: $darkGrey;
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  .name-header {
+    color: $red;
+    font-weight: bold
+  }
+
+  .image-header {
+    height: 35px;
+  }
+    
+  .logo-header {
+    height: 24px;
+    width: auto;
+    @media (max-width: $extra-small) {
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../assets/scss/general.scss';
+
+.button {
+  background-color: $red;
+  color: $white;
+  border: 1px solid $red;
+  padding: 10px 16px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  & svg {
+    margin-left: 8px
+  }
+  .label-button {
+    margin-top: 3px;
+    @media (max-width: $tablet) {
+        display: none;
+        & ~ svg {
+          margin-left: 0;
+        }
+    }
+    @media (max-width: $small) {
+        display: inline-block;
+        & ~ svg {
+          margin-left: 8px;
+        }
+    }
+}
+}
