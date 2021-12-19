@@ -1,3 +1,5 @@
+DEMO [https://shipper-driver-fbf3d.web.app/](https://shipper-driver-fbf3d.web.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,7 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn`
 ### `yarn start`
 
 Runs the app in the development mode.\
